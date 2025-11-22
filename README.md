@@ -1,2 +1,12 @@
-# ai-general-general-purpose-agent-with-memory
-General-purpose Agent with Long memory taks 
+# GPA: Long-memory task
+
+**Equipped with:**
+- WEB Search (DuckDuckGo MCP Server. Performs WEB search and content fetching)
+- Python Code Interpreter (MCP Server. A stateful Python code execution environment with Jupyter kernel support)
+- Image Generation (ImageGen model within DIAL Core)
+- File Content Extractor (Extract content from file (PDF, TXT, CSV). Supports basic pagination)
+- RAG Search (Makes RAG search. Indexed files preserve during conversation in Cache)
+- **Long-memory tools**:
+  - Store memory
+  - Search in memory
+  - Delete long memory
