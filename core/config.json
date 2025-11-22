@@ -29,6 +29,18 @@
         }
       ]
     },
+    "gpt-4.1-nano": {
+      "displayName": "gpt-4.1-nano",
+      "endpoint": "http://adapter-dial-openai:5000/openai/deployments/gpt-4.1-nano/chat/completions",
+      "iconUrl": "http://localhost:3001/gpt4.svg",
+      "type": "chat",
+      "upstreams": [
+        {
+          "endpoint": "https://api.openai.com/v1/chat/completions",
+          "key": "${OPENAI_API_KEY}"
+        }
+      ]
+    },
     "dall-e-3": {
       "displayName": "DALL-E",
       "endpoint": "http://adapter-dial-openai:5000/openai/deployments/dall-e-3/chat/completions",
