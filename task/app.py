@@ -20,6 +20,7 @@ from task.tools.rag.rag_tool import RagTool
 
 DIAL_ENDPOINT = os.getenv('DIAL_ENDPOINT', "http://localhost:8080")
 DEPLOYMENT_NAME = os.getenv('DEPLOYMENT_NAME', 'gpt-4o')
+# DEPLOYMENT_NAME = os.getenv('DEPLOYMENT_NAME', 'claude-sonnet-3-7')
 
 
 class GeneralPurposeAgentApplication(ChatCompletion):
@@ -59,9 +60,8 @@ class GeneralPurposeAgentApplication(ChatCompletion):
                 dial_endpoint=DIAL_ENDPOINT
             ),
 
-            StoreMemoryTool(memory_store=self.memory_store),
-            SearchMemoryTool(memory_store=self.memory_store),
-            DeleteMemoryTool(memory_store=self.memory_store),
+            #TODO:
+            # Add tools with Long-term memory capabilities
         ]
 
         tools.extend(await self._get_mcp_tools("http://localhost:8051/mcp"))
