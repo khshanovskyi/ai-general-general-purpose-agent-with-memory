@@ -11,6 +11,8 @@
     - Search in memory
     - Delete long memory
 
+## AFTER ALL THE TASKS DONE - DON'T FORGET TO REMOVE API KEYs FROM core/config.json
+
 ## Flow
 <img src="agent_flow.png">
 
