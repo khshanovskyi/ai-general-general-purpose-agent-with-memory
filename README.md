@@ -10,3 +10,5 @@
   - Store memory
   - Search in memory
   - Delete long memory
+
+<img src="agent_flow.png">
