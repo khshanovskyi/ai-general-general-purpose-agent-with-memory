@@ -89,3 +89,9 @@
   "last_deduplicated_at": null
 }
 ```
+
+---
+
+## How it is originally done in ChatGPT and Claude:
+
+<img src="chatgpt-claude-flow.png">
